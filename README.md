@@ -3,7 +3,7 @@
 # EPEX Forecast (PyPi Access)
 
 
-**Easy Access to current market forecast**
+**Python package: Easy access to current market forecast**
 
 [![PyPI version](https://img.shields.io/pypi/v/epex_forecast.svg)](https://pypi.org/project/epex_forecast/)
 [![Python](https://img.shields.io/pypi/pyversions/epex_forecast.svg)](https://pypi.org/project/epex_forecast/)
@@ -11,24 +11,22 @@
 
 `epex_forecast` provides a minimal Python API to use the forecast API we provided through our research.
 
-
+# Quick Start
 ## Installation
 
 ```bash
 pip install epex_forecast
 ```
 
-## Quick Start
-
+## Minimal Example
+### Code
 ```python
 from epex_forecast import get_epex_forecast, plot_forecast
 
 forecast_df, meta = get_epex_forecast()
 plot_forecast(forecast_df, meta)
 ```
-
-## Example output
-
+### Output
 #### meta
 ```python
 {
