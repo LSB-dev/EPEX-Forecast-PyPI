@@ -8,3 +8,4 @@ site/
 /.pypirc
 /.idea/
 /raw_images/
+*.py~
