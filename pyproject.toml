@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "padelf"
+name = "epex_forecast"
 version = "0.1.1"
 description = "Easy Access to the current EPEX market forecast (day-ahead, week-ahead)"
 readme = "README.md"
