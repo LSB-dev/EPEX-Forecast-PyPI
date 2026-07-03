@@ -54,4 +54,4 @@ Author: LSB (Fraunhofer IPA)
 Licence pip package: MIT
 
 ## Acknowledgements
-👨‍💻 We'd like to thank Guilherme Schmid for the groundwork on the simplified PyPI integration, which served as the foundation for this work.
+👨‍💻 We'd like to thank Guilherme Schmid for [his work](https://github.com/LSB-dev/PADELF-PIP) on a PyPI integration, which served as the foundation for this work.
