@@ -52,3 +52,6 @@ plot_forecast(forecast_df, meta)
 Author: LSB (Fraunhofer IPA)
 
 Licence pip package: MIT
+
+## Acknowledgements
+👨‍💻 We'd like to thank Guilherme Schmid for the groundwork on the simplified PyPI integration, which served as the foundation for this work.
