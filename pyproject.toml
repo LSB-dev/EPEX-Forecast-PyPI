@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "epex_forecast"
-version = "0.1.1"
+version = "0.2.0"
 description = "Easy Access to the current EPEX market forecast (day-ahead, week-ahead)"
 readme = "README.md"
 license = "MIT"

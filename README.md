@@ -21,16 +21,21 @@ pip install epex_forecast
 ## Minimal Example
 ### Code
 ```python
-from epex_forecast import get_epex_forecast, plot_forecast
+from epex_forecast import EPEXForecasterClient, plot_forecast
 
-forecast_df, meta = get_epex_forecast()
+# create API client
+client = EPEXForecasterClient()
+
+# get forecast
+forecast_df, meta = client.get_forecast()
+    
 plot_forecast(forecast_df, meta)
 ```
 ### Output
 #### meta
 ```python
 {
-    'region': 'DE', 
+    'region': 'DE_LU', 
     'modelId': 'Chr2-prob-7step-[96]'
 }
 ```
@@ -47,6 +52,13 @@ plot_forecast(forecast_df, meta)
 ````
 #### plot_forecast
 ![Output plot of forecast](images/example_request_output.png)
+
+## Available Market Forecasts
+- 🇩🇪🇱🇺 - Germany/Luxemburg: "DE_LU"
+- 🇫🇷 - France: "FR"
+- 🇧🇪 - Belgium": "BE"
+- 🇦🇹 - Austria: "AT"
+- 🇵🇱 - Poland: "PL"
 
 ## License
 Author: LSB (Fraunhofer IPA)
