@@ -11,6 +11,9 @@
 
 `epex_forecast` provides a minimal Python API to use the forecast API we provided through our research.
 
+# Latest News
+❗ The Forecast Servers are currently (as of late July 2026) only internally available. A port forwarding is currently under development and will be available soon. Contact the owner to stay up-to-date.
+
 # Quick Start
 ## Installation
 
