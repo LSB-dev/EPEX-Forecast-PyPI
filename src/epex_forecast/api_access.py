@@ -19,8 +19,8 @@ def _query_api(
         timeout: int
 ):
     params = {
-        "from": from_time,
-        "to": to_time,
+        "from_time": from_time,
+        "to_time": to_time,
         "series": series,
         "market": market,
         "token": api_key
@@ -148,6 +148,8 @@ class EPEXForecasterClient:
             # only "from" not given - set from_time 7 days prior
             to_time_object = datetime.strptime(to_time, TARGET_FORMAT)
             from_time = (to_time_object - timedelta(days=7)).strftime(TARGET_FORMAT)
+
+        #assert from_time < to_time, "Make sure, that 'from_time' is before 'to_time' (requesting time intervall is not empyty). You set from_time='{}' and to_time='{}'".format(from_time, to_time)
 
         if series is None:
             series = "market,forecast"
